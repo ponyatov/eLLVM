@@ -3,6 +3,8 @@
 
 * https://github.com/zeam-vm/magicite
 * https://github.com/garazdawi/llevm
+* hex.pm
+  * https://hex.pm/docs/publish
 * powered by `metaL`
 
 (c) Dmitry Ponyatov <<dponyatov@gmail.com>> 2020 MIT License
