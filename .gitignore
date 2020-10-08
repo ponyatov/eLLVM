@@ -12,3 +12,6 @@
 /_build/
 erl_crash.dump
 # / <section:mid>
+# \ <section:bot>
+/doc/*.pdf
+# / <section:bot>

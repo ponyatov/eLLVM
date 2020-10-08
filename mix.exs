@@ -29,7 +29,8 @@ defmodule Ellvm.MixProject do
   defp deps do
     [
       # \ <section:deps>
-      # {:exsync, "~> 0.2", only: :dev}
+      # {:exsync, "~> 0.2", only: :dev},
+      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
       # / <section:deps>
     ]
   end
