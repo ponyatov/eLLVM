@@ -5,10 +5,15 @@ defmodule Ellvm.MixProject do
   def project do
     [
       # \ <section:project>
-      app: :eLLVM,
+      app: :ellvm,
       version: "0.0.1",
+      name: "eLLVM",
+      description: "LLVM binding & eDSL for the Elixir programming language",
+      organization: "(c) Dmitry Ponyatov <dponyatov@gmail.com>",
+      source_url: "https://github.com/ponyatov/eLLVM"
       elixir: "~> 1.7",
       start_permanent: Mix.env() == :prod,
+      package: package(),
       deps: deps()
       # / <section:project>
     ]
@@ -28,5 +33,12 @@ defmodule Ellvm.MixProject do
       # {:exsync, "~> 0.2", only: :dev}
       # / <section:deps>
     ]
+  end
+
+  defp package() do
+    name: "ellvm",
+    files: ~w(lib src .formatter.exs mix.exs README* LICENSE*),
+    licenses: ["MIT"],
+    links: %{"GitHub" => "https://github.com/ponyatov/eLLVM"}
   end
 end
