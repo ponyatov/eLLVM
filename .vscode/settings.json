@@ -9,7 +9,7 @@
 		"sequence":[
 			"workbench.action.files.saveAll",
 			{"command": "workbench.action.terminal.sendSequence",
-				"args": {"text": "\u000Dinit:stop().\u000D"}
+				"args": {"text": "\u000DSystem.stop\u000D"}
 			}
 		]
 	},
@@ -25,21 +25,29 @@
 		"sequence":[
 			"workbench.action.files.saveAll",
 			{"command": "workbench.action.terminal.sendSequence",
-				"args": {"text": "\u000Dc(ellvm).\u000D"}
+				"args": {"text": "\u000Drecompile\u000D"}
 			}
 		]
 	},
 ],
 // / <section:multiCommand>
 "files.watcherExclude": {
+	// \ <section:watcher>
+	"**/_build/**":true,
+	"**/.elixir_ls/**":true,
+	// / <section:watcher>
 },
 "files.exclude": {
+	// \ <section:exclude>
+	"**/.elixir_ls/**":true,
+	// / <section:exclude>
 },
 "files.associations": {
 	// \ <section:assoc>
 	"*{rc,sh}": "shellscript",
 	"ws.?":"json",
 	"*.{?rl,core}": "erlang",
+	"*.{ex,exs,app}": "elixir"
 	// / <section:assoc>
 },
 // / <section:mid>

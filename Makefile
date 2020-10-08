@@ -23,6 +23,10 @@ XPATH    = PATH=$(BIN):$(PATH)
 XMAKE    = $(XPATH) $(MAKE) -j$(CORES)
 ERL      = erl
 ERLC     = erlc
+IEX      = iex
+MIX      = mix
+ELIXIR   = elixir
+ELIXIRC  = elixirc
 # / <section:tools>
 # / <section:top>
 # \ <section:mid>
