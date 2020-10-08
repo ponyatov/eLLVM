@@ -26,10 +26,17 @@ ERLC     = erlc
 # / <section:tools>
 # / <section:top>
 # \ <section:mid>
+# \ <section:all>
+.PHONY: all
+all:
+	$(MIX) format
+	$(MIX) compile
+# / <section:all>
 # \ <section:repl>
 .PHONY: repl
 repl:
-	$(ERL) 
+	$(MIX) format
+	$(IEX) -S $(MIX)
 	$(MAKE) $@
 # / <section:repl>
 # \ <section:doc>
@@ -69,6 +76,7 @@ Linux_install Linux_update:
 # \ <section:merge>
 MERGE  = Makefile apt.txt .gitignore .vscode
 MERGE += doc src tmp README.md
+MERGE += lib .formatter.exs mix.exs
 # / <section:merge>
 .PHONY: master shadow release zip
 
