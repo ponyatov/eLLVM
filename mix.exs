@@ -9,7 +9,6 @@ defmodule Ellvm.MixProject do
       version: "0.0.1",
       name: "eLLVM",
       description: "LLVM binding & eDSL for the Elixir programming language",
-      organization: "(c) Dmitry Ponyatov <dponyatov@gmail.com>",
       source_url: "https://github.com/ponyatov/eLLVM",
       elixir: "~> 1.7",
       start_permanent: Mix.env() == :prod,
@@ -40,7 +39,8 @@ defmodule Ellvm.MixProject do
       name: "ellvm",
       files: ~w(lib src .formatter.exs mix.exs README* LICENSE*),
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/ponyatov/eLLVM"}
+      links: %{"GitHub" => "https://github.com/ponyatov/eLLVM"},
+      organization: "(c) Dmitry Ponyatov <dponyatov@gmail.com>"
     ]
   end
 end
