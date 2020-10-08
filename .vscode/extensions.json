@@ -8,6 +8,8 @@
 	"stkb.rewrap",
 	"pgourlain.erlang",
 	"valentin.beamdasm",
+	"mjmcloug.vscode-elixir",
+	"sammkj.vscode-elixir-formatter",
 	// / <section:ext>
 ]
 // / <section:mid>
