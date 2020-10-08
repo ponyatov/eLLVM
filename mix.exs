@@ -40,8 +40,7 @@ defmodule Ellvm.MixProject do
       name: "ellvm",
       files: ~w(lib src .formatter.exs mix.exs README* LICENSE*),
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/ponyatov/eLLVM"},
-      organization: "(c) Dmitry Ponyatov <dponyatov@gmail.com>"
+      links: %{"GitHub" => "https://github.com/ponyatov/eLLVM"}
     ]
   end
 end

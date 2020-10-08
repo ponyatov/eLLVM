@@ -14,4 +14,5 @@ erl_crash.dump
 # / <section:mid>
 # \ <section:bot>
 /doc/*.pdf
+/doc/*.epub
 # / <section:bot>
