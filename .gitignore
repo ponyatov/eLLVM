@@ -7,4 +7,8 @@
 # \ <section:mid>
 *.dump
 *.beam
+/deps/
+/*.lock
+/_build/
+erl_crash.dump
 # / <section:mid>
